@@ -1,26 +1,23 @@
 const express = require('express');
-const TelegramBot = require('node-telegram-bot-api');
+// const TelegramBot = require('node-telegram-bot-api');
 const { Provider } = require("./axios");
 const PORT = process.env.PORT || 4040;
 
 const app = express();
 app.use(express.json());
-const TOKEN = "7728375831:AAEAlHQP4JgvSw0dnBSJ3Zseta6NAjTc728";
-const bot = new TelegramBot(TOKEN, { polling: true });
+// const TOKEN = "7728375831:AAEAlHQP4JgvSw0dnBSJ3Zseta6NAjTc728";
+// const bot = new TelegramBot(TOKEN, { polling: true });
 
 
 const Messages = {
     greetings: `
         Olá, Wellington, tudo bem? 
-
-Acabei de ver aqui que você tem um cadastro de propriedade comigo ☺
-
-Estou vendo que essa é a primeira vez usando minha tecnologia, então vou lhe explicar como funciono.
+        Acabei de ver aqui que você tem um cadastro de propriedade comigo ☺
+        Estou vendo que essa é a primeira vez usando minha tecnologia, então vou lhe explicar como funciono.
     `,
     afterGreetings: `
         Meu nome é Gaia, uma inteligência Artificial criada para auxiliar agricultores profissionalizar em sua produção de forma sustentável e que maxime a geração de renda. 
-
-Possuo alguns serviços que você pode utilizar, como você já está cadastrado convosco, você já pode solicitar um série de Serviços.
+        Possuo alguns serviços que você pode utilizar, como você já está cadastrado convosco, você já pode solicitar um série de Serviços.
     `
 };
 
