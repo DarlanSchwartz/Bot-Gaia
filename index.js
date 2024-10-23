@@ -1,13 +1,12 @@
 const express = require('express');
-const TelegramBot = require('node-telegram-bot-api');
+// const TelegramBot = require('node-telegram-bot-api');
 const { Provider } = require("./axios");
-const fs = require('fs');
 const PORT = process.env.PORT || 4040;
 
 const app = express();
 app.use(express.json());
-const TOKEN = "7728375831:AAEAlHQP4JgvSw0dnBSJ3Zseta6NAjTc728";
-const bot = new TelegramBot(TOKEN, { polling: true });
+// const TOKEN = "7728375831:AAEAlHQP4JgvSw0dnBSJ3Zseta6NAjTc728";
+// const bot = new TelegramBot(TOKEN, { polling: true });
 
 
 const Messages = {
